@@ -63,7 +63,7 @@ namespace MouseAutoClick
                         case "右双击": MouseHelper.RightButtonDoubleClick(x, y); break;
                     }
 
-                    Thread.Sleep(sleepTime);
+                    if (sleepTime > 0) Thread.Sleep(sleepTime);
                 }
             }
             while ((bool)isRecycleRun);
